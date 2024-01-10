@@ -35,7 +35,7 @@ def decision(response):
     elif response != "y" or response != "n":
         answer = "y" 
         while answer != "y" or answer !="n":
-            answer= (input("INVALID OPTION,PLEASE CHOOSE A VALID OPTION:" ))
+            answer= (input("INVALID OPTION,PLEASE CHOOSE A VALID OPTION:" )).lower()
             if answer == "y" or answer == "n":
                 return answer
             
@@ -60,6 +60,6 @@ while answer.lower() == "y":
     if people_attending > room_capacity:
         print("\this meeting does not meet fire regulations ")
         print(F"\t{abs(dif)} must be removed from the meeting to meet fire regulations.")
-    answer = input("\tWould you like to enter a another meeting's information[y/n:]")
+    answer = input("\tWould you like to enter a another meeting's information[y/n:]").lower()
     answer = decision(answer)
 print("\tThank you for using this program")
