@@ -50,16 +50,25 @@ print("\tHello Welcome to the Fire Regulation Program")
 answer = "y"
 
 while answer.lower() == "y":
+    #prompt the user for a meeting name
     meeting_name = input("\tPlease enter the name of the meeting:")
+    #promt the user for the max capacity
     room_capacity = int(input("\tPlease enter the room capacity:"))
+    #prompt the user to enter the amount of people in the meeting
     people_attending = int(input("\tPlease enter how many people are attending:"))
+    #call the difference function by attaching it to a variable
     dif = difference(people_attending, room_capacity)
+    #create the if statement for if the meeting meets fire regulations
     if people_attending <= room_capacity:
         print("\tThis meeting meets the fire regulations")
-        print(F"\t{dif} can attend the meeting and still meet fire regulatiom")
+        print(F"\t{dif} can attend the meeting and still meet fire regulation.")
+    #create the if statement for if the meeting does not meet fire regulations
     if people_attending > room_capacity:
         print("\this meeting does not meet fire regulations ")
         print(F"\t{abs(dif)} must be removed from the meeting to meet fire regulations.")
+    #ask the user if they want to enter more information
     answer = input("\tWould you like to enter a another meeting's information[y/n:]").lower()
+    #call the decision function by attaching it to answer to ensure a valid option is chosen
     answer = decision(answer)
+#display the goodbye statement
 print("\tThank you for using this program")
