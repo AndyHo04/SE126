@@ -7,6 +7,19 @@
 # Program Prompt: You will be writing one Python file for this project - it is a program that determines  whether a meeting room is in violation of fire regulations regarding the maximum room capacity. Theprogram will accept the maximum room capacity and the number of people attending the meeting. If the number of people is less than or equal to the maximum room capacity, the program announces that it is legal to hold the meeting and tells how many additional people may legally attend. If the number of people exceeds the maximum room capacity, the program announces that the meeting cannot be held as planned due to the fire regulation and tells how any people must be excluded in order to meet the fire regulations. The user should be allowed to enter and check as many rooms as they would like without exiting the program.
 
 #variable dictionary:
+#difference - function that calculates the sum of people attending the meeting and the max capacaity of the room
+#people(parameter in the difference function) - how many people are attending the meeting
+#max_cap(parameter in the difference function) - the max capacity of the room 
+#over_under (in the difference function) - the sum of the people attending the room and the max capacity of the room
+#decision - function that determines whether the user's choice for continuing the program is valid. 
+#response - (parameter in the decision function) - the users response to continuing the program
+#answer(in the decision function) - users response to the continuing the program after choosing a invalid option
+#answer(in main program) - loop control variable and users choice to continuing the program
+#meeting_name - the name of the meeting
+#room_capacity - the max capacity of the room
+#people_attending - how many people are in the meeting
+#dif - what the return value of the difference function is attached to
+
 
 
 #----------------Functions---------------
