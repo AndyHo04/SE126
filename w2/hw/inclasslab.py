@@ -29,7 +29,7 @@ rooms = []
 maxs = []
 mins = []
 
-#connect to file
+#connect to the file
 with open("w2/hw/lab2a.csv") as csvfile:
     
     #allow the file to be read by the program
