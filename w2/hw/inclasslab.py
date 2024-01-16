@@ -7,8 +7,15 @@
 #program prompt - The csv file lab2a.csv contains a list of rooms, the maximum number of people that the roomcan accommodate, and the number of people currently registered for the event. Write aprogram that displays all rooms that are over the maximum limit of people and the number of people that have to be notified that they will have to be put on the wait list. After the file is completely processed the program should display the number of records processed and thenumber of rooms that are over the limit.
 
 #variable dictionary:
-
-
+#total_records - the amount of records that were in the file
+#rooms - a list that holds all the rooms
+#maxs - list that holds all the max values
+#mins - list that holds the min values
+#csvfile - holds lab2a.csv
+#file - allows for program to read the lab2a.csv file
+#rec - tells the program to process one record at a time
+#over - sum of min and max values
+#total_rooms - rooms that were over max capacity
 
 #------------main program below-----------
 #import the csv
