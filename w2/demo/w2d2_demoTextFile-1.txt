@@ -7,7 +7,7 @@ Dylan,F,32,Fish
 Josh,M,9,Capybara
 Mohammed,M,5,Tiger
 Chris,S,13,Capybara
-Katie,T,7 
+Katie,T,7
 Jayden,F,18,Leopard Gecko
 Brandon,M,29,Dog
 David,P,42,Axolotl

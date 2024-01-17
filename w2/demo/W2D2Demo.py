@@ -10,7 +10,7 @@ lnames = []
 favenums = []
 faveanimals = []
 
-with open("w2/demo/w2d2_demoTextFile.txt") as csvfile:
+with open("w2/demo/w2d2_demoTextFile-1.txt") as csvfile:
     # we must indent when connected to % reading the file
 
     file = csv.reader(csvfile)
