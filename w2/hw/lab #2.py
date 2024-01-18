@@ -66,7 +66,7 @@ with open("w2/hw/lab2b.csv") as csvfile:
             year.append(rec[8])
         #if the computer does not have a second hard disk
         else:
-            hdd_2.append("---")
+            hdd_2.append("   ")
             os.append(rec[6])
             year.append(rec[7])
 
