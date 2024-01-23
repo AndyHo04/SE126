@@ -1,10 +1,9 @@
 #Name - Andy Ho
 
-#Lab #2
+#Lab #3 in class
 
-#Program Prompt - You have been asked to produce a report that lists all the computers in the csv file lab2b.csv. Your report should look like the following sample output. The last line should print the number of computers in the file.
+#Program Prompt - Your CIO (Chief Information Officer) has asked you to determine how much it would cost the company to replace all machines that are from 2016 and earlier. He plans on spending not more than $2,000 dollars for desktops and $1,500 for laptops.  Store the data from the file lab3a.csv into lists.  Then process the lists to reprint all of the file information (exactly as you did in Lab 2) and also produce an end report that lists the number of desktops that will be replaced, the cost to replace the desktops, the number of laptops that will be replaced, and the cost to replace the laptops.
 
-#variable dictionary:
 #variable dictionary:
 #total_records - keeps count of every record in the file
 #field 0 - col.0, rec([0])
@@ -27,6 +26,10 @@
 #year- a list that holds the years each computer was purchased(rec[8]) from the file
 #rec - each record in the file
 #csvfile - holds the file for the program to read
+#desktop_count - counts the amount of desktops
+#desktop_money - how much it would cost to replace the desktops
+#laptop_count - counts the amount of laptops
+#laptop_money - how much it would cost to replace the laptops
 
 #----------main code below---------------
 
@@ -106,6 +109,23 @@ with open("w2/hw/lab2b.csv") as csvfile:
 #Display the information to the user
 for index in range(total_records):
     print(f"{comp_type[index]:8} {manu[index]:7}  {processor[index]:3} {ram[index]:3} {hdd_1[index]:10} {num_hdd[index]:6} {hdd_2[index]:8} {os[index]:4} {year[index]:3}")
+#keep the total count of desktops/laptops and money cost
+desktop_count = 0
+laptop_count = 0
+desktop_money = 0 
+laptop_money = 0
+#use the for loop to process the desktops
+for index in range(0, len(comp_type)):
+    #let the program look through the comp type list
+    if comp_type[index] == "Desktop" and int(year[index]) <= 16:
+        desktop_count += 1 #add 1 every time a desktop that is processed is outdated and needs to be replaced
+        desktop_money += 2000 #add $2000 every time a desktop is processed and going to be replaced
+    if comp_type[index] == "Laptop" and int(year[index]) <= 16:
+        laptop_count += 1 #add 1 every time a laptop that is processed is outdated and needs to be replaced
+        laptop_money += 1500 #add $1500 every time a desktop is processed and going to be replaced
 
-#final message to the user(how many computers there were in total)
+#final message to the users
 print(f"\t\tThere were {total_records} computers in the file")
+print(f"\t\tTo replace {desktop_count} it will cost ${desktop_money}")
+print(f"\t\tTo replace {laptop_count} it will cost ${laptop_money}")
+print(f"Press enter to key to continue...")

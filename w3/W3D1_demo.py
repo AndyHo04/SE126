@@ -94,7 +94,7 @@ for index in range(0, total_records):
     #for index in range (0, len(comp_type_list)): ---> len(comp_type_list) returns the INTEGER count of values
      print(f"{comp_type_list[index]:8} {manu_list[index]:8} {processor_list[index]:3} {ram_list[index]:3} {hdd_1_list[index]:5} {num_hdd_list[index]:3} {hdd_2_list[index]:5} {os_list[index]:4} {year_list[index]:4}")
 
-#process te lists to: count the number of desktops
+#process to lists to: count the number of desktops
 desktop_count = 0
 for index in range(0, len(comp_type_list)):
     
