@@ -41,6 +41,7 @@ print(f"TOTAL RECORDS: {total_records} | TOTAL SALARY: ${total_salaries:.2f}")
 #process the lists to display the text file information
 #PROCESS LIST --> FOR LOOP!
 #for something in something else
+
 for index in range(0, total_records):
     #"for each value in the range of 0 to total number of values in total records"
     print(f"INDEX: {index} \t {names[index]} is {ages[index]} years old")
