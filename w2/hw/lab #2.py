@@ -50,9 +50,10 @@ with open("w2/hw/lab2b.csv") as csvfile:
     for rec in file:
         #keep total of records:
         total_records += 1
-        
+
         #variables for each field - store each type of informationn to a variable using the index
         comp_type.append(rec[0])
+        manu.append(rec[1])
         processor.append(rec[2])
         ram.append(rec[3])
         hdd_1.append(rec[4])
@@ -73,7 +74,7 @@ with open("w2/hw/lab2b.csv") as csvfile:
         
 
 #Display the information to the user
-for index in range(len(comp_type)):
+for index in range(total_records):
     print(f"{comp_type[index]:8} {manu[index]:7}  {processor[index]:3} {ram[index]:3} {hdd_1[index]:10} {num_hdd[index]:6} {hdd_2[index]:8} {os[index]:4} {year[index]:3}")
 #final message to the user(how many computers there were in total)
 print(f"\t\tThere were {total_records} computers in the file")
