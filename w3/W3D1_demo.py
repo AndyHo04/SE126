@@ -52,14 +52,16 @@ with open("w3/lab2b.csv") as csvfile:
         elif rec[5] == "2":
             hdd_2 = rec[6]
             os = rec[7]
-            year = [8]
+            year = rec[8]
         else:
             hdd_2 = "ERR0R--" + str(rec[5])
             os = "ERR0R--"
             year = "ERROR --"
 
         #final print for each record
+        #print(f"{comp_type:8} {manu:8} {processor:3} {ram:3} {hdd_1:5} {num_hdd:3} {hdd_2:5} {os:4} {year:4}")
         print(f"{comp_type:8} {manu:8} {processor:3} {ram:3} {hdd_1:5} {num_hdd:3} {hdd_2:5} {os:4} {year:4}")
+        
 #------DISCONNECED FROM FILE-----------------------
 
 print(f"TOTAL RECORDS: {total_records}")
