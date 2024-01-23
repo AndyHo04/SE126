@@ -21,7 +21,7 @@
 #----------main code below---------------
 
 #create a header
-print(f"{"type":8} {"Brand":8} {"CPU":3} {"RAM":3} {"1st Disk":8} {"No.HDD":2} {"2nd disk":10} {"OS":2}   YEAR")
+print(f"{'type':8} {'Brand':8} {'CPU':3} {'RAM':3} {'1st Disk':8} {'No.HDD':2} {'2nd disk':10} {'OS':2} YEAR")
 print("----------------------------------------------------------------------------------------------------------")
 
 import csv
