@@ -53,7 +53,6 @@ with open("w2/hw/lab2b.csv") as csvfile:
         
         #variables for each field - store each type of informationn to a variable using the index
         comp_type.append(rec[0])
-        manu.append(rec[1])
         processor.append(rec[2])
         ram.append(rec[3])
         hdd_1.append(rec[4])
