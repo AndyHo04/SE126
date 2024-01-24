@@ -57,23 +57,25 @@ with open("w3/voters_202040.csv") as csvfile:
         total_records += 1
 
         #store data to the lists
-        id = int(rec[0])
-        age = int(rec[1])
-        registered = (rec[2])
-        votes = (rec[3])
+        id.append(int(rec[0]))
+        age.append(int(rec[1]))
+        registered.append(rec[2])
+        votes.append(rec[3])
 
-        #create if statement for if the individial is not eligible
-        if age <= 18:
-            individuals_not_of_age += 1
-        #if the individial is old enough but have not registered
-        elif age >= 18 and registered == "N":
-            individuals_eligible_unregistered += 1
-        #if individual is eligible to vote but did not vote
-        elif registered == "Y" and votes == "N":
-            individuals_eligible_unvoted += 1
-        #if individual voted
-        elif registered == "Y" and votes == "Y":
-            individuals_voted += 1
+#create for loop statement for program to filter the data into the variables
+for i in range(total_records):
+    #if individuals are not eligible
+    if age[i] <= 18:
+        individuals_not_of_age += 1
+    #if individuals are eligible but have not registered
+    elif age[i] >= 18 and registered [i]== "N":
+        individuals_eligible_unregistered += 1
+    #if individuals have registered but have not voted
+    elif registered[i] == "Y" and votes[i]== "N":
+        individuals_eligible_unvoted += 1
+    #if individuals have voted
+    elif registered[i] == "Y" and votes[i] == "Y":
+        individuals_voted += 1
 #end of for loop
 #display final output and messages to user
 print(f"The total amount of records processed was {total_records}")
