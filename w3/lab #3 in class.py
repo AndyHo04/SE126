@@ -128,4 +128,4 @@ for index in range(0, len(comp_type)):
 print(f"\t\tThere were {total_records} computers in the file")
 print(f"\t\tTo replace {desktop_count} it will cost ${desktop_money}")
 print(f"\t\tTo replace {laptop_count} it will cost ${laptop_money}")
-print(f"Press enter to key to continue...")
+print(f"\t\tPress enter to key to continue...")
