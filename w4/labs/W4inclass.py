@@ -113,7 +113,7 @@ all_students = []
 for i in range(0, len(fname)):
 
     #add each student's data to their (index) place in the all_students[] list 
-    all_students.append([fname[i], lname[i], test1[i], test2[i], test3[i], round(num_average[i], 1), letter_grade[i]])
+    all_students.append([fname[i], lname[i], test1[i], test2[i], test3[i], round(num_average[i]), letter_grade[i]])
 
 #display the 2d list to the console where each value appears as a value(and not a list item)
 for i in range (0, len(all_students)):
