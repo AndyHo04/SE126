@@ -121,3 +121,5 @@ for i in range (0, len(all_students)):
          print(f"{all_students[i][x]:8}", end="\t")
 
     print()
+
+print(f"{all_students[2][4]}")

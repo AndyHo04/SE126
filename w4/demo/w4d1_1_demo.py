@@ -96,4 +96,6 @@ for i in range (0, len(all_students)):
         #inner for handles each value found at current list(all_students[i])
         print(f"{all_students[i][x]}", end="\t")
 
+    print()
+
     #include an extra exmpy print() to cancel the interiror prints end=""
