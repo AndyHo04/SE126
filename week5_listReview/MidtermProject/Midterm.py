@@ -150,7 +150,7 @@ def seq_search(pick):
 
 #----------------------MAIN CODE BELOW--------------------------------
 
-total_searchs = 0
+total_searchs = []
 answer = "y"
 
 
@@ -167,7 +167,8 @@ while answer.lower() == "y":
     decision = seq_search(choice)
 
     if decision != "":#if you have a chosen a team that is in the Premier League
-        total_searchs += 1
+        if decision not in total_searchs:
+            total_searchs.append(decision)
         print(f"\n\n\n\t\t\t{team[decision]}({nickname[decision]})")
         print(f"\t\t\tMOTTO:{motto[decision]}")
         print(f"\t\t\t-------------------------------")
@@ -179,7 +180,7 @@ while answer.lower() == "y":
     #give user opportunity to stop looking at teams and break out of loop
     answer = input("\t\t\tDo you want to continue looking at teams [y/n]:")
 #exit loop
-print(f"\t\t\tThank you for using this program, You looked at {total_searchs} teams during your session.")
+print(f"\t\t\tThank you for using this program, You looked at {len(total_searchs)} teams during your session.")
 
 
 
