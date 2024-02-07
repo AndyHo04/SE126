@@ -33,7 +33,7 @@ def menu():
 
 def seq_search(search_term):
 
-    #search_term is a locak var name and only exists in this definition block
+    #search_term is a local var name and only exists in this definition block
 
     #initialize found index_variable
     found_index =" " #set as empty
