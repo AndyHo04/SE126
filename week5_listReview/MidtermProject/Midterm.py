@@ -171,6 +171,7 @@ while answer.lower() == "y":
         print(f"\n\n\n\t\t\t{team[decision]}({nickname[decision]})")
         print(f"\t\t\tMOTTO:{motto[decision]}")
         print(f"\t\t\t-------------------------------")
+        print("\t\t\tHow They Are Doing This Season:")
         print(f"\t\t\tStanding:{standing[decision]}\n\t\t\tPoints:{points[decision]}\n\t\t\tWins:{wins[decision]}\n\t\t\tDraws:{draws[decision]}\n\t\t\tLosses:{losses[decision]}\n\t\t\tGoals Scored:{goals_scored[decision]}\n\t\t\tGoals Allowed:{goals_allowed[decision]}\n\t\t\tGoal Difference:{goals_difference[decision]}")
     else: #if you have chosen a team that is not in the Premier League
         print(f"\t\t\tThe team {choice} is not in the Premier League this season")
