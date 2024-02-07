@@ -175,7 +175,7 @@ def menu():
 #create the sequential search function which will search through the entire list to find the value you are looking for
 def seq_search(pick):
 
-    #initilaize the index variabl
+    #initilaize the index variable
     choice_index = ""#this is empty
 
     #create a for loop so that the program looks through the list from start to end to find the value you are looking for
