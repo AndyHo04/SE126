@@ -2,11 +2,50 @@
 
 #Lab - MIDTERM
 
+#Date - 2/13/24
+
 #Program Prompt - For your Midterm Project in SE126 you will be building a program of your own design! You must work individually to design a program and file of your choosing.
 
 #About Program - A 2023-2024 Premier League(England Soccer League) stat sheet program that allows users to see how teams are doing from their current standing, how many goals they have scored, how many points they have, and etc. 
 
 #Variable Dictionary:
+#field 0 - teams, col.0, rec[0]
+#team - list that holds all the teams from the file(col.0, rec[0])
+
+#field 1 - current standing in the league, col.1, rec[1]
+#standing - list that holds the each teams standing from the file(col.1 rec[1]) 
+
+#field 2 - how many points the team has, col.2, rec[2]
+#points - list that holds each teams points from the file(col.2 rec[2])
+
+#field 3 - amount of wins each team has, col.3, rec[3]
+#wins - list that holds each teams wins from the file(col.3, rec[3])
+
+#field 4 - amount of draws each team has, col.4, rec[4]
+#draws - list that holds each teams draws from the file(col.4, rec[4])
+
+#field 5 - amount of losses each team has, col.5, rec[5]
+#losses - list that holds each teams losses from from the file(col.5, rec[5])
+
+#field 6 - amount of goals each team has scored, col.6, rec[6]
+#goals_scored - list that holds the amount of goals each team has scored(col.6, rec[6])
+
+#field 7 - amount of goals each team has allowed, col.7, rec[7]
+#goals_allowed - list that holds the amount of goals each team has allowed(col.7, rec[7])
+
+#field 8 - the goals differences(goals_scored - goals_allowed) each team has, (col.8, rec[8])
+#goals_difference - list that holds the goal differences each team has(col.8, rec[8])
+
+#motto - list that holds each teams motto
+#nickname - list that holds each teams nickname
+
+#menu - Function that displays all the teams
+#display - holds and calls the menu function to the main program to display
+#seq_search - function that will search in a sequence through the entire list from the starting index and last index to find the value you are looking for
+#pick - parameter of the seq_search function
+#choice_index - holds the index(location) to this variable
+#total_searchs - list that holds the amount of teams you searched
+#decision - holds and calls the seq_search function to use in the main program
 
 
 
@@ -167,20 +206,20 @@ while answer.lower() == "y":
     decision = seq_search(choice)
 
     if decision != "":#if you have a chosen a team that is in the Premier League
-        if decision not in total_searchs:
+        if decision not in total_searchs:#learned the not in statement from Slater(easy to understand) and this statement will basically store/append the team to total_searches once so that if you search up a team twice, it will only store the team to the list during the first time and not the next few times if you search the same team again.
             total_searchs.append(decision)
-        print(f"\n\n\n\t\t\t{team[decision]}({nickname[decision]})")
-        print(f"\t\t\tMOTTO:{motto[decision]}")
-        print(f"\t\t\t-------------------------------")
-        print("\t\t\tHow They Are Doing This Season:")
-        print(f"\t\t\tStanding:{standing[decision]}\n\t\t\tPoints:{points[decision]}\n\t\t\tWins:{wins[decision]}\n\t\t\tDraws:{draws[decision]}\n\t\t\tLosses:{losses[decision]}\n\t\t\tGoals Scored:{goals_scored[decision]}\n\t\t\tGoals Allowed:{goals_allowed[decision]}\n\t\t\tGoal Difference:{goals_difference[decision]}")
+        print(f"\n\n\n\t\t\t\t{team[decision]}({nickname[decision]})")
+        print(f"\t\t\t\tMOTTO:{motto[decision]}")
+        print(f"\t\t\t\t-------------------------------")
+        print("\t\t\t\tHow They Are Doing This Season:")
+        print(f"\t\t\t\tStanding:{standing[decision]}\n\t\t\t\tPoints:{points[decision]}\n\t\t\t\tWins:{wins[decision]}\n\t\t\t\tDraws:{draws[decision]}\n\t\t\t\tLosses:{losses[decision]}\n\t\t\t\tGoals Scored:{goals_scored[decision]}\n\t\t\t\tGoals Allowed:{goals_allowed[decision]}\n\t\t\t\tGoal Difference:{goals_difference[decision]}")
     else: #if you have chosen a team that is not in the Premier League
-        print(f"\t\t\tThe team {choice} is not in the Premier League this season")
+        print(f"\t\t\t\tThe team {choice} is not in the Premier League this season")
 
     #give user opportunity to stop looking at teams and break out of loop
-    answer = input("\t\t\tDo you want to continue looking at teams [y/n]:")
+    answer = input("\t\t\t\tDo you want to continue looking at teams [y/n]:")
 #exit loop
-print(f"\t\t\tThank you for using this program, You looked at {len(total_searchs)} teams during your session.")
+print(f"\t\t\t\tThank you for using this program, You looked at {len(total_searchs)} teams during your session.")
 
 
 
