@@ -67,7 +67,7 @@ motto = []
 nickname = []
 
 #connect to file for program to read and append(store) the data to lists
-with open("week5_listReview/MidtermProject/Premier_League_Stats.csv") as csvfile:
+with open("week5_listReview\MidtermProject\Premier_League_Stats.csv") as csvfile:
    
     file = csv.reader(csvfile)
 
