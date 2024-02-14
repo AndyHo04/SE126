@@ -206,7 +206,7 @@ while answer.lower() == "y":
     decision = seq_search(choice)
 
     if decision != "":#if you have a chosen a team that is in the Premier League
-        if decision not in total_searchs:#learned the not in statement from Slater(easy to understand) and this statement will basically store/append the team to total_searches once so that if you search up a team twice, it will only store the team to the list during the first time and not the next few times if you search the same team again.
+        if decision not in total_searchs:#this statement will basically store/append the team to total_searches once so that if you search up a team twice, it will only store the team to the list during the first time and not the next few times if you search the same team again.
             total_searchs.append(decision)
         print(f"\n\n\n\t\t\t\t{team[decision]}({nickname[decision]})")
         print(f"\t\t\t\tMOTTO:{motto[decision]}")
