@@ -176,13 +176,13 @@ def menu():
 def seq_search(pick):
 
     #initilaize the index variable
-    choice_index = ""#this is empty
+    choice_index = "" #this is empty or you could co chouce_index = -1
 
     #create a for loop so that the program looks through the list from start to end to find the value you are looking for
     for i in range(0, len(team)):
 
         #look at each value in the list to see if it matches what you are looking for from your input
-        if team[i] == pick:
+        if team[i].lower() == pick.lower():
             choice_index = i #stores the index(location) to this variable
         
     return choice_index #returns your choice
