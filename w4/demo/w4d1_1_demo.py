@@ -98,4 +98,4 @@ for i in range (0, len(all_students)):
 
     print()
 
-    #include an extra exmpy print() to cancel the interiror prints end=""
+    #include an extra empty print() to cancel the interiror prints end=""
