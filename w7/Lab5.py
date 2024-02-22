@@ -87,10 +87,10 @@ def menu():
     answer = input("\n\tEnter your choice: ")
     return answer
 
-#create an empty list to append multiple people who have the class when searching for a class roster
-found_class = []
 #build a sequential search function for option 4 to view the class roster
 def seq_search(pick):
+    found_class = []
+
     for i in range (0, len(id)):
         #ask if search value matches current value in any classes(search)
         if pick.upper() == class1[i].upper() or pick.upper() == class2[i].upper() or pick.upper() == class3[i].upper():
@@ -102,6 +102,7 @@ def seq_search(pick):
              print(f"\t{id[found_class[i]]:5} {lname[found_class[i]]:11} {fname[found_class[i]]:8}")
     else:
         print("\tThe class does not exist")
+
 #build the binary search for option 2 to search for a student ID
 def bin_search_id():
     search = input("\n\tEnter the student ID you are looking for: ")
