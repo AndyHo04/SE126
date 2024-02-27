@@ -50,6 +50,7 @@
 
 
 #-----------------------LISTS---------------------------------------------
+#create all the seats in a list
 seatA = ["A", "A", "A", "A", "A", "A", "A"]
 seatB = ["B", "B", "B", "B", "B", "B", "B"]
 seatC = ["C", "C", "C", "C", "C", "C", "C"]
@@ -81,7 +82,7 @@ def seat_get():#function will get the seat choice from the user
         seat_choice = input("\t\tEnter the SEAT you wish to sit in [A/B/C/D]:").upper()
 
     return seat_choice
-def more_seats():
+def more_seats():#ask the user if they want to continue to add more seats
     choice = input("\t\tDo you want to continue to add more seats [Y/N]:").upper()
 
     return choice
@@ -129,7 +130,7 @@ while answer.upper() == "Y":
             print(f"\t\tSorry but {row_input}{seat_input} has already been taken")
 
 
-    if seatA[i] == "X" and seatB[i] == "X" and seatC[i] == "X" and seatD[i] == "X":
+    if seatA[i] == "X" and seatB[i] == "X" and seatC[i] == "X" and seatD[i] == "X":#if all seats were taken
         answer = "N"
     else:
         answer = more_seats()
