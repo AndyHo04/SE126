@@ -64,6 +64,8 @@ def row_get():#function will get the row choice from the user
     while row_choice < 1 or row_choice > 7:
         try:
             row_choice = int(input("\t\tEnter the ROW you wish to sit in [1-7]"))
+            if row_choice < 1 or row_choice > 7:
+                print("\t\tNOT A VALID ROW, PLEASE ENTER A VALID ROW [1-7]")
         except:#will not show an error if you enter a string(ex:letter) but will ask you to enter a valid row choice
             print("\t\tNOT A VALID ROW, PLEASE ENTER A VALID ROW [1-7]")
     
