@@ -67,7 +67,7 @@ motto = []
 nickname = []
 
 #connect to file for program to read and append(store) the data to lists
-with open("week5_listReview\MidtermProject\Premier_League_Stats.csv") as csvfile:
+with open("week5_listReview/MidtermProject/Premier_League_Stats.csv") as csvfile:
    
     file = csv.reader(csvfile)
 
@@ -220,17 +220,3 @@ while answer.lower() == "y":
     answer = input("\t\t\t\tDo you want to continue looking at teams [y/n]:")
 #exit loop
 print(f"\t\t\t\tThank you for using this program, You looked at {len(total_searchs)} teams during your session.")
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
