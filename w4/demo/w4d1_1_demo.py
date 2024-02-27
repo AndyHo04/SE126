@@ -77,7 +77,7 @@ print(f"\n\n---2D LIST DISPLAY-------------------------------------")
 print(f"{'FIRST':12} \t {'LAST':12} \t {'TEST1'} \t {'TEST2'} \t {'TEST3'}")
 print('---------------------------------------------------------------------------------')
 #use your 1d parallel lists to populate a new, 2d list
-#Hint:the 2d list is a list ... populated with 8d lists
+#Hint:the 2d list is a list ... populated with 1d lists
 all_students = []
 
 for i in range(0, len(fname)):
@@ -86,7 +86,7 @@ for i in range(0, len(fname)):
     all_students.append([fname[i], lname[i], test1[i], test2[i], test3[i], average[i]])
 
 #display the 2d list to the console - for now, just get the lists to display ie ['Floyd','Eastham','100','85' '93']
-print(f"\n\n---2D LIST individial vales-------------------------------------")
+print(f"\n\n---2D LIST individial values-------------------------------------")
 for i in range (0, len(all_students)):
     print(f"{all_students[i]}")
 
