@@ -25,7 +25,26 @@
 #You must use a function that asks the user in they want to continue or stop. The function should only accept an uppercase or lowercase y or n
 
 #Variable Dictionary:
+#seatA - list of A seats 
+#seatB - list of B seats 
+#seatC - list of C seats 
+#seatD - list of D seats
 
+#row_get() - function that will get the row choice from the user
+#row_choice - variable that will store the row choice
+
+#seat_get() - function that will get the seat choice from the user
+#acceptable_seats - list of acceptable seats
+#seat_choice - variable that will store the seat choice
+
+#more_seats() - function that will ask the user if they want to continue to add more seats
+#choice - variable that will store the choice of the user
+
+#answer - variable that will store the choice of the user if they want to continue to add more seats
+#row - variable that will store the row number
+
+#row_input - variable that will store the row choice
+#seat_input - variable that will store the seat choice
 
 #---------------------PROGRAM BEGINS BELOW-------------------------------
 
@@ -98,18 +117,21 @@ while answer.upper() == "Y":
             print(f"\t\tSorry but {row_input}{seat_input} has already been taken")
     elif seat_input == "C":#seatlistC
         #This will take away the C seat in that row once chosen and will display a "x"
-        if seatB[row_input - 1] != "X":
-            seatB[row_input - 1] = "X"
+        if seatC[row_input - 1] != "X":
+            seatC[row_input - 1] = "X"
         else:
             print(f"\t\tSorry but {row_input}{seat_input} has already been taken")
     elif seat_input == "D":#seatlistD
         #This will take away the D seat in that row once chosen and will display a "x"
-        if seatB[row_input - 1] != "X":
-            seatB[row_input - 1] = "X"
+        if seatD[row_input - 1] != "X":
+            seatD[row_input - 1] = "X"
         else:
             print(f"\t\tSorry but {row_input}{seat_input} has already been taken")
-    
-    answer = more_seats()
+
+
+    if seatA[i] == "X" and seatB[i] == "X" and seatC[i] == "X" and seatD[i] == "X":
+        answer = "N"
+    else:
+        answer = more_seats()
 #exit loop and program
 print("\t\t Thank You For Using This Program")
-    
