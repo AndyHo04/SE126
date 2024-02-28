@@ -1,4 +1,4 @@
-#Name - Andy Ho
+#Name - Andy Ho, Group Mates - (Jayden Fagre, Hendry Reyes) 
 
 #Week 8 Class Lab
 
