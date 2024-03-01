@@ -99,3 +99,4 @@ for i in range (0, len(all_students)):
     print()
 
     #include an extra empty print() to cancel the interiror prints end=""
+print(all_students[2][1])

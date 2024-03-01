@@ -328,9 +328,12 @@ while user_choice != "5":
         print(f"\t\tYour change is: ${user_change}")
         print("\t\tThank you for your purchase")
         for i in range(0,len(seat_list)):
-            if all_rows_seats[i] == all_seats[i]:
-                if all_seats[i] != "*":
-                     all_seats[row_list[i] - 1][seat_list[i]] = "*"
+            for x in range(0, len(seat_list[i])):
+                if all_rows_seats[i][x] == row_list[i] and all_rows_seats[i][x] == seat_list[i]:
+                  if all_rows_seats[i][x] != "*":
+                     all_rows_seats[i][x] = "*"
+
+          
             
           
             
