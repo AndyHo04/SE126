@@ -246,7 +246,6 @@ while user_choice != "5":
             seat = seat_get()
             row_list.append(row)
             seat_list.append(seat)
-            all_rows_seats.append([row_list, seat_list])
             tickets_purchased += 1
             if row == 1 or row == 2 or row == 3 or row == 4 or row == 5:
                 user_total_cost += row1_5cost#the cost of the tickets for an individual user
@@ -312,6 +311,8 @@ while user_choice != "5":
         print(f"\n\t\tThe amount of seats available in row 14 is {row_14}")
         print(f"\n\t\tThe amount of seats available in row 15 is {row_15}")
     elif user_choice == "4":#Checkout
+        for i in range (0, len(seat_list)):
+            all_rows_seats.append([row_list[i], seat_list[i]])
         print("\n\n\t\tWelcome to the Checkout")
         print(f"\t\tYou have purchased {tickets_purchased} tickets")
         print(f"\t--------------------SEATS PURCHASED----------------------")
