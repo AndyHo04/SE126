@@ -354,7 +354,9 @@ while user_choice != "5":
 #end of loop
 print("\t\tEnjoy your time at the Theater")
 #end of program
-
+how_to_add_everything = 0
+how_to_add_everything = len(seat_A) + len(seat_B) + len(seat_C)
+print(f"\t\t{how_to_add_everything}")
         
 
         

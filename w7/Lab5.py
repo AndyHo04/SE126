@@ -167,5 +167,3 @@ while answer == "y":
         print("\tyou have chosen to exit")
 #exit the loop
 print("\tThank you for using this program")
-testing = len(id) + len(lname) + len(fname) + len(class1) + len(class2) + len(class3)
-print(testing)
