@@ -220,3 +220,8 @@ while answer.lower() == "y":
     answer = input("\t\t\t\tDo you want to continue looking at teams [y/n]:")
 #exit loop
 print(f"\t\t\t\tThank you for using this program, You looked at {len(total_searchs)} teams during your session.")
+
+##how to add everything up at the end
+#all_searchs = 0
+#all_searchs = len(total_searchs) + len(football_searchs) + len(basketball_searchs)
+#print(f"\t\t\t\tYou looked at {all_searchs} teams during your session.")
