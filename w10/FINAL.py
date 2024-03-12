@@ -464,7 +464,6 @@ while user_choice != "4":
         if afc_found != "":  #if you have chosen a team that is in the AFC
           if afc_found not in football_teams:#this statement will basically store/append the team to total
             football_teams.append(afc_team)
-
         print(f"\n\t\t\t\t\t{team_fb[afc_found].upper()}")
         print("\t\t------------------------------------------------------------------")
         print(f"\t\t\t\t\tSTANDING: {standing_fb[afc_found]}\n\t\t\t\t\tWINS: {wins_fb[afc_found]}\n\t\t\t\t\tLOSSES: {losses_fb[afc_found]}\n\t\t\t\t\tPOINTS SCORED: {pointsScored_fb[afc_found]}\n\t\t\t\t\tPOINTS ALLOWED: {pointsAllowed_fb[afc_found]}\n\t\t\t\t\tOFFENSE RANKING: {offenseFb_ranking[afc_found]}\n\t\t\t\t\tDEFENSE RANKING: {defenseFb_ranking[afc_found]}\n\t\t\t\t\tPLAYOFFS?: {playoffs_fb[afc_found]}")
