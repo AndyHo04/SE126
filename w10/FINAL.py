@@ -406,10 +406,10 @@ def team_sorted(listName, position):
 #--------------------------------- ANSWER FUNCTION ----------------------------------------------------------
 #function that will ask then user after every search if they want to search again in that sport
 def answer():
+  answer_choice = ""
   acceptable_answers = ["y", "n"]
-  answer_choice = input("\n\t\tWould you like to continue looking at this sport (y/n): ").lower()
   while answer_choice.lower() not in acceptable_answers:
-    print("\n\t\tPlease enter a valid choice[y/n]: ")
+    answer_choice = input("\n\t\tWould you like to continue looking at this sport (y/n): ").lower()
   return answer_choice
 
 #------------------------------------ MAIN CODE BELOW -------------------------------------------------------
